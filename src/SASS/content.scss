@@ -5,9 +5,14 @@ $font-color: white;
 
 body {
     background-color: $background-colour;
+    color: $font-color;
 }
 
 img {
     height: 50px;
     width: 50px;
+}
+
+h2 {
+    color: $highlight-colour;s
 }
