@@ -1,3 +1,30 @@
 nav {
     position: sticky;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    background-color: $secondary-colour;
+    border-bottom: 1px solid #1a1a1a;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+    height: 4rem;
+    align-items: center;
+
+    .navbar {
+        font-size: 1.5rem;
+        margin-right: 3rem;
+        letter-spacing: 2px;
+        
+        a:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        a:hover {
+            color: $highlight-colour;
+        }
+    }
 }
