@@ -13,6 +13,7 @@
         display: flex;
         width: 100%;
         justify-content: space-evenly;
+        align-items: center;
 
         #about-me {
             display: flex;
@@ -24,5 +25,41 @@
                 line-height: 2rem;
             }
         }
+        
+        #skills {
+            margin-top: 2rem;
+
+            .diamond-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .diamond-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin: 2.5rem;
+            }
+            
+            .diamond-item {
+                display: flex;
+                border: linear-gradient(to bottom right, #b1ac4c, black);
+                border-radius: 20%;
+                flex-direction: column;
+                align-items: center;
+                width: 100px; 
+                height: 100px; 
+                margin: 5px; 
+            }
+            
+            .diamond-item img {
+                width: 100%; 
+                height: auto;
+            }
+
+        }
+          
     }
 }
