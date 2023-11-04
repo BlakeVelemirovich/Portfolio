@@ -45,7 +45,7 @@
             
             .diamond-item {
                 display: flex;
-                border: linear-gradient(to bottom right, #b1ac4c, black);
+                border: 2px solid $highlight-colour;
                 border-radius: 20%;
                 flex-direction: column;
                 align-items: center;

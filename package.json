@@ -1,9 +1,12 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "homepage": "https://myusername.github.io/my-app",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode development",
     "watch": "webpack --watch"
   },
@@ -18,5 +21,8 @@
     "style-loader": "^3.3.2",
     "webpack": "^5.77.0",
     "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
