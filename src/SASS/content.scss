@@ -17,3 +17,10 @@ img {
 h2, span {
     color: $highlight-colour;
 }
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 4px solid $highlight-colour;
+    margin-bottom: 5rem;
+}

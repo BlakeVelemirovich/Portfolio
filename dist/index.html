@@ -90,18 +90,41 @@
 
     <section id="projects">
         <h2>Projects</h2>
-        <article id="projects">
-            <div>
+        <article id="project-container">
+            <div class="project">
                 <img src="/src/images/React-Memory-Game.png">
                 <p>Pokemon Memory Game</p>
-                <p>A fun little game built in React using RESTful API calls with the PokeApi </p>
+                <p>A fun memory game built in React using RESTful API calls with the PokeApi. Keeps track of high scores using useState, and many little animation effects with useEffect</p>
+            </div>
+            <div class="project">
+                <img src="/src/images/React-Memory-Game.png">
+                <p>Weather App</p>
+                <p>A weather web app utilizing weather App calls.</p>
+            </div>
+            <div class="project">
+                <img src="/src/images/React-Memory-Game.png">
+                <p>To-do</p>
+                <p>A web app for managing your to-do list. It uses local storage to keep track of submitted to-do's.</p>
             </div>
         </article>
     </section>
 
     <section id="contact">
         <article>
-            <h2>Want to talk?</h2>
+            <h2>Contact</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="bddf107b-e881-4948-a89c-c36bc2a047bc">
+            
+                <input type="text" name="name" required>
+                <input type="email" name="email" required>
+                <textarea name="message" required></textarea>
+                <div class="h-captcha" data-captcha="true"></div>
+                <button type="submit">Submit Form</button>
+            
+            </form>
+            
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </article>
     </section>
 
