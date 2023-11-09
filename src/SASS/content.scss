@@ -39,28 +39,40 @@ and (max-width : 480px) {
         flex-direction: column;
     }
     
-    #projects {
-        display: initial;
-
-        h2 {
+    body {
+        #home {
+            font-size: 3rem;
             text-align: center;
         }
 
-        #project-container {
-            flex-direction: column;
-            align-items: center;
+        #projects {
+            display: initial;
 
-            .project {
-                width: 70%;
-
-                img {
-                    display: block;
-                    width: 100%;
+            h2 {
+                width: 10rem;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 6rem;
+            }
+    
+            #project-container {
+                flex-direction: column;
+                align-items: center;
+    
+                .project {
+                    width: 70%;
+                    margin-bottom: 15rem;
+    
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
                 }
             }
+            
         }
-        
     }
+    
     
 }
 
