@@ -45,6 +45,14 @@ and (max-width : 480px) {
             text-align: center;
         }
 
+        nav {
+            justify-content: center;
+
+            .navbar {
+                margin-right: 0;
+            }
+        }
+
         #projects {
             display: initial;
 
@@ -71,10 +79,22 @@ and (max-width : 480px) {
             }
             
         }
+
+        section#contact {
+            article {
+                form {
+                    textarea {
+                        height: 22rem;
+                    }
+                }
+            }
+        }
     }
     
     
 }
+
+/* General Styles Applied Across the Page */
 
 body {
     background-color: $background-colour;
