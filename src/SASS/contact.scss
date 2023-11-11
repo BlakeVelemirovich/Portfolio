@@ -3,6 +3,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        height: 70vh;
 
         form {
             display: flex;
@@ -41,7 +42,8 @@
             }
 
             textarea {
-                height: 10rem;
+                height: 14rem;
+                width: 35rem;
             }
 
             button {

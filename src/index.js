@@ -29,13 +29,6 @@ const handleScroll = () => {
         projects.classList.remove("active");
         contact.classList.remove("active");
     }
-    else if (isInViewPort(projects)) {
-        projects.classList.add("active");
-
-        aboutMe.classList.remove("active");
-        skills.classList.remove("active");
-        contact.classList.remove("active");
-    }
     else if (isInViewPort(contact)) {
         contact.classList.add("active");
 

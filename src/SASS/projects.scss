@@ -16,6 +16,11 @@
                 width: 25rem;
                 height: 17rem;
                 box-shadow: 0 4px 4px rgba(0,0,0,0.6);
+                transition: transform 0.5s ease-in-out;
+            }
+
+            img:hover {
+                transform: scale(1.2);
             }
         }
     }
