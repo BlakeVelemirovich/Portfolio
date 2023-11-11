@@ -1,0 +1,27 @@
+html {
+    body {
+        section#about {
+            div.flex-container { 
+                article#about-me.active {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+
+                article#skills.active {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
