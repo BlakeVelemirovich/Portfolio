@@ -1,1 +1,79 @@
-(()=>{"use strict";const t=(t,e=0)=>{const s=t.getBoundingClientRect(),c=window.innerHeight||document.documentElement.clientHeight,o=s.top<=c&&s.top>=0,i=s.bottom>=0&&s.bottom<=c,a=s.bottom-s.top,n=(a-Math.max(0,-s.top,s.bottom-c))/a*100;return o||i||n>=e},e=()=>{const e=document.getElementById("about-me"),s=document.getElementById("skills"),c=document.getElementById("project-container"),o=document.getElementById("contact");t(e,50)?(e.classList.add("active"),s.classList.add("active"),c.classList.remove("active"),o.classList.remove("active")):t(o)?(o.classList.add("active"),e.classList.remove("active"),s.classList.remove("active"),c.classList.remove("active")):(e.classList.remove("active"),s.classList.remove("active"),c.classList.remove("active"),o.classList.remove("active"))};window.addEventListener("scroll",e),e()})();
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/SASS/main.scss":
+/*!****************************!*\
+  !*** ./src/SASS/main.scss ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://portfolio/./src/SASS/main.scss?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _SASS_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SASS/main.scss */ \"./src/SASS/main.scss\");\n\r\n\r\n// Checker for if an element is in the viewport.\r\nconst isInViewPort = (element, percentage = 0) => {\r\n    const rect = element.getBoundingClientRect();\r\n    const windowHeight = window.innerHeight || document.documentElement.clientHeight;\r\n\r\n    const elementTopInView = rect.top <= windowHeight && rect.top >= 0;\r\n    const elementBottomInView = rect.bottom >= 0 && rect.bottom <= windowHeight;\r\n\r\n    const elementHeight = rect.bottom - rect.top;\r\n    const visiblePercentage = (elementHeight - Math.max(0, -rect.top, rect.bottom - windowHeight)) / elementHeight * 100;\r\n\r\n    return elementTopInView || elementBottomInView || visiblePercentage >= percentage;\r\n}\r\n\r\n// Checks and see if an element is in the view port and if it is then adds an enter animation.\r\nconst handleScroll = () => {\r\n    const aboutMe = document.getElementById(\"about-me\");\r\n    const skills = document.getElementById(\"skills\");\r\n    const projects = document.getElementById(\"project-container\");\r\n    const contact  = document.getElementById(\"contact\");\r\n    \r\n    if (isInViewPort(aboutMe, 50)) {\r\n        aboutMe.classList.add(\"active\");\r\n        skills.classList.add(\"active\");\r\n\r\n\r\n        projects.classList.remove(\"active\");\r\n        contact.classList.remove(\"active\");\r\n    }\r\n    else if (isInViewPort(contact)) {\r\n        contact.classList.add(\"active\");\r\n\r\n        aboutMe.classList.remove(\"active\");\r\n        skills.classList.remove(\"active\");\r\n        projects.classList.remove(\"active\");\r\n    }\r\n    else {\r\n        aboutMe.classList.remove(\"active\");\r\n        skills.classList.remove(\"active\");\r\n        projects.classList.remove(\"active\");\r\n        contact.classList.remove(\"active\");\r\n    }\r\n}\r\n\r\nwindow.addEventListener(\"scroll\", handleScroll);\r\n\r\n// Initial trigger in case they start the webpage with an element already in the viewport.\r\nhandleScroll();\n\n//# sourceURL=webpack://portfolio/./src/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	
+/******/ })()
+;
