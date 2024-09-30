@@ -67,6 +67,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+canvas {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Push canvas to the background */
+  z-index: -1;
+}
+
 img {
   height: 5rem;
   width: 5rem;
