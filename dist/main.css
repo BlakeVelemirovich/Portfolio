@@ -124,21 +124,21 @@ nav .navbar a:hover {
   color: #b1ac4c;
 }
 
-#about {
+#work-experience {
   margin-bottom: 6rem;
 }
-#about h2 {
+#work-experience h2 {
   margin-left: auto;
   margin-right: auto;
-  width: 7rem;
+  width: 15rem;
 }
-#about .flex-container {
+#work-experience .flex-container {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
-#about .flex-container #about-me {
+#work-experience .flex-container #about-me {
   display: flex;
   opacity: 0;
   transform: translateX(-100px);
@@ -147,30 +147,30 @@ nav .navbar a:hover {
   align-items: center;
   justify-content: center;
 }
-#about .flex-container #about-me p {
+#work-experience .flex-container #about-me p {
   width: 38rem;
   line-height: 2rem;
   font-size: 1.3rem;
 }
-#about .flex-container #skills {
+#work-experience .flex-container #skills {
   margin-top: 2rem;
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
-#about .flex-container #skills .diamond-container {
+#work-experience .flex-container #skills .diamond-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#about .flex-container #skills .diamond-row {
+#work-experience .flex-container #skills .diamond-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 2.5rem;
 }
-#about .flex-container #skills .diamond-item {
+#work-experience .flex-container #skills .diamond-item {
   display: flex;
   border: 2px solid #b1ac4c;
   border-radius: 20%;
@@ -181,7 +181,7 @@ nav .navbar a:hover {
   margin: 5px;
   font-size: 1.1rem;
 }
-#about .flex-container #skills .diamond-item img {
+#work-experience .flex-container #skills .diamond-item img {
   width: 100%;
   height: auto;
 }
@@ -275,11 +275,11 @@ header {
   background-color: #b1ac4c;
 }
 
-html body section#about div.flex-container article#about-me.active {
+html body section#work-experience div.flex-container article#about-me.active {
   opacity: 1;
   transform: translateX(0);
 }
-html body section#about div.flex-container article#skills.active {
+html body section#work-experience div.flex-container article#skills.active {
   opacity: 1;
   transform: translateX(0);
 }
